@@ -26,5 +26,10 @@ func TestResize(t *testing.T) {
 		t.Error(err.Error())
 		return
 	}
+	err = Resize("ab.gif", "s.gif", 100, 100)
+	if err != nil {
+		t.Error(err.Error())
+		return
+	}
 	fmt.Println("all...")
 }
